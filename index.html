@@ -14,44 +14,49 @@
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<div class="container">
+		<div class="container-wrapper">
+			<div class="container">
 
-			<header>
-				<h1>Kim Brylle M. Espera</h1>
-				<h4>Front-End Web Developer</h4>
-			</header>
+				<header>
+					<h1>Kim Brylle M. Espera</h1>
+					<h4>Front-End Web Developer</h4>
+				</header>
 
-			<div class="panel panel-default">
-				<div class="panel-heading">Personal Info</div>
-				<div class="panel-body">
-					<ul>
-						<li><i class="fa fa-map-marker"></i> Ampalaya Village, Gun-ob, Lapu-Lapu City, Cebu</li>
-						<li><i class="fa fa-mobile"></i> 09173180878</li>
-						<li><i class="fa fa-envelope-o"></i> esperakb@gmail.com</li>
+				<div class="profile-tabs" id="profile-tabs">
+					<ul class="tabs-selector">
+						<li><a href="#about" title="About Me">About Me</a></li>
+						<li><a href="#resume" title="Resume">Resume</a></li>
+						<li><a href="#portfolio" title="Portfolio">Portfolio</a></li>
+						<li><a href="#contact" title="Contact">Contact</a></li>
 					</ul>
+
+					<div class="tabs-content">
+						<div id="about">
+							<p>About Me</p>
+						</div>
+
+						<div id="resume">
+							<p>Resume</p>
+						</div>
+
+						<div id="portfolio">
+							<p>Portfolio</p>
+						</div>
+
+						<div id="contact">
+							<p>Contact</p>
+						</div>
+					</div>
 				</div>
+
+				<footer>
+					<p>&copy; KimBrylle, 2015</p>
+				</footer>
+
 			</div>
-
-			<div class="panel panel-default">
-				<div class="panel-heading">Work Experience</div>
-				<div class="panel-body">
-					<ul>
-						<li>
-							work 1
-						</li>
-						<li>
-							work 2
-						</li>
-					</ul>
-				</div>
-			</div>
-
-			<footer>
-				<p>&copy; KimBrylle, 2015</p>
-			</footer>
-
 		</div>
 		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>

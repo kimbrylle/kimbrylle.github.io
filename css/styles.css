@@ -22,16 +22,135 @@
 }
 
 /* GLOBAL */
+html {
+	background: url(../images/html-bg.jpg) no-repeat top center;
+}
+
 * {
 	outline: none;
 }
 
 body {
+	background: transparent;
+	color: #000;
 	font-family: OpenSansRegular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: OpenSansBold;
+}
+
+h1 {
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+}
+
+a:active,
+a:focus,
+a:hover {
+	outline: none;
+	text-decoration: none;
+}
+
+/* CUSTOM STYLES */
+.container-wrapper {
+	padding: 50px 0;
+}
+
+header {
+	margin: 0 0 50px 0;
+}
+
+header h1,
+header h4 {
+	color: #fff;
+	text-shadow: 0px 2px 0px #e74c3c;
+}
+
+header h1 {
+	margin: 0;
+}
+
+header h4 {
+	font-size: 24px;
+	margin: 0;
+	text-align: center;
+}
+
+.tabs-selector {
+	text-align: center;
+}
+
+.tabs-selector li {
+	border: solid 1px #f1f1f1;
+	-webkit-border-radius: 5px 5px 0 0;
+	   -moz-border-radius: 5px 5px 0 0;
+			border-radius: 5px 5px 0 0;
+	border-bottom: 0;
+	display: inline-block;
+	margin: 0 5px;
+	overflow: hidden;
+	position: relative;
+	top: 1px;
+	vertical-align: bottom;
+}
+
+.tabs-selector li a {
+	background: #fff;
+	color: #000;
+	display: block;
+	font-family: OpenSansBold;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	width: 120px;
+}
+
+.tabs-selector li.ui-tabs-active a {
+	color: #e74c3c;
+	height: 50px;
+	line-height: 50px;
+}
+
+.tabs-content {
+	background: #fff;
+	border: 1px solid #f1f1f1;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+	-webkit-box-shadow: 0px 8px 0px #c0392b;
+	   -moz-box-shadow: 0px 8px 0px #c0392b;
+			box-shadow: 0px 8px 0px #c0392b;
+	padding: 15px;
+}
+
+footer {
+	background: #fff;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+			border-radius: 5px;
+	-webkit-box-shadow: 0px 8px 0px #ccc;
+	   -moz-box-shadow: 0px 8px 0px #ccc;
+			box-shadow: 0px 8px 0px #ccc;
+	margin: 30px 0 0 0;
+	padding: 15px 15px 5px;
 }

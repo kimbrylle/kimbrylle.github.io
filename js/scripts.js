@@ -21,10 +21,10 @@
 
 	'use strict';
 
-	// remove the space between inline-block elements
+	$('#profile-tabs').tabs();
+
 	$('').contents().filter(function() { return this.nodeType === 3; }).remove();
 
-	// SEO email button
 	$('#btn-email').on('click', function() {
 		_gaq.push(['_trackEvent', 'Email', 'Click', 'Header']);
 	});
