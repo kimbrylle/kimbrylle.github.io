@@ -32,6 +32,8 @@
 	});
 
 	$('#contact .row').contents().filter(function() { return this.nodeType === 3; }).remove();
+	$('.site-list').contents().filter(function() { return this.nodeType === 3; }).remove();
+	$('.skills-list').contents().filter(function() { return this.nodeType === 3; }).remove();
 
 	$('#btn-email').on('click', function() {
 		_gaq.push(['_trackEvent', 'Email', 'Click', 'Header']);
