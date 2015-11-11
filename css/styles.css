@@ -76,6 +76,7 @@ a:hover {
 	padding: 50px 0;
 }
 
+/* header */
 header {
 	margin: 0 0 50px 0;
 }
@@ -96,25 +97,26 @@ header h4 {
 	text-align: center;
 }
 
-.tabs-selector {
+/* tab */
+.tabs-wrapper {
 	text-align: center;
 }
 
-.tabs-selector li {
+.tab {
 	border: solid 1px #f1f1f1;
 	-webkit-border-radius: 5px 5px 0 0;
 	   -moz-border-radius: 5px 5px 0 0;
 			border-radius: 5px 5px 0 0;
 	border-bottom: 0;
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0;
 	overflow: hidden;
 	position: relative;
 	top: 1px;
 	vertical-align: bottom;
 }
 
-.tabs-selector li a {
+.tab a {
 	background: #fff;
 	color: #000;
 	display: block;
@@ -122,35 +124,108 @@ header h4 {
 	height: 40px;
 	line-height: 40px;
 	text-transform: uppercase;
-	width: 120px;
+	width: 60px;
 }
 
-.tabs-selector li.ui-tabs-active a {
+.tab.ui-tabs-active a {
 	color: #e74c3c;
 	height: 50px;
 	line-height: 50px;
 }
 
-.tabs-content {
-	background: #fff;
-	border: 1px solid #f1f1f1;
-	-webkit-border-radius: 5px;
-	   -moz-border-radius: 5px;
-			border-radius: 5px;
-	-webkit-box-shadow: 0px 8px 0px #c0392b;
-	   -moz-box-shadow: 0px 8px 0px #c0392b;
-			box-shadow: 0px 8px 0px #c0392b;
-	padding: 15px;
+.tab a span {
+	display: none;
 }
 
+.tab-content {
+	background: #fff;
+	border: 1px solid #f1f1f1;
+	-webkit-border-radius: 0 0 5px 5px;
+	   -moz-border-radius: 0 0 5px 5px;
+			border-radius: 0 0 5px 5px;
+	-webkit-box-shadow: 0px 6px 0px #c0392b;
+	   -moz-box-shadow: 0px 6px 0px #c0392b;
+			box-shadow: 0px 6px 0px #c0392b;
+	padding: 30px;
+}
+
+/* about content */
+.photo img {
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+			border-radius: 50%;
+	max-width: 200px;
+	width: 100%;
+}
+
+/* contact content */
+.contact-content {
+	text-align: center;
+}
+
+.contact-item {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	margin: 0 0 15px 0;
+}
+
+.contact-item h4 {
+	color: #c0392b;
+	margin: 0;
+}
+
+.contact-item div a {
+	color: #000;
+}
+
+/* footer */
 footer {
 	background: #fff;
 	-webkit-border-radius: 5px;
 	   -moz-border-radius: 5px;
 			border-radius: 5px;
-	-webkit-box-shadow: 0px 8px 0px #ccc;
-	   -moz-box-shadow: 0px 8px 0px #ccc;
-			box-shadow: 0px 8px 0px #ccc;
-	margin: 30px 0 0 0;
+	-webkit-box-shadow: 0px 6px 0px #ccc;
+	   -moz-box-shadow: 0px 6px 0px #ccc;
+			box-shadow: 0px 6px 0px #ccc;
+	margin: 20px 0 0 0;
 	padding: 15px 15px 5px;
+	text-align: center;
 }
+
+/*------------------------------------------------------------------
+	[ Mobile 480px ]
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) {
+	.tab a {
+		width: 100px;
+	}
+
+	.tab a span {
+		display: inline;
+	}
+
+}
+
+/*------------------------------------------------------------------
+	[ Tablet 768px ]
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+	.tab {
+		margin: 0 5px;
+	}
+
+	.tab a {
+		width: 120px;
+	}
+}
+
+/*------------------------------------------------------------------
+	[ Desktop 992px ]
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {}
+
+/*------------------------------------------------------------------
+	[ Wide Screen 1200px ]
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {}

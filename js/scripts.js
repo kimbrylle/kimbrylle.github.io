@@ -21,9 +21,17 @@
 
 	'use strict';
 
-	$('#profile-tabs').tabs();
+	//$('.tab-content>div').animate({height:"toggle"});
 
-	$('').contents().filter(function() { return this.nodeType === 3; }).remove();
+	$('.tab a').click(function() {
+		$('.tab-content>div').animate();
+	});
+
+	$('#profile-tabs').tabs({
+		'active': '#about'
+	});
+
+	$('#contact .row').contents().filter(function() { return this.nodeType === 3; }).remove();
 
 	$('#btn-email').on('click', function() {
 		_gaq.push(['_trackEvent', 'Email', 'Click', 'Header']);
