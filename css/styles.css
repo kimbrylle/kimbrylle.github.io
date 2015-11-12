@@ -73,6 +73,18 @@ a:hover {
 	text-decoration: none;
 }
 
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+.clearfix:after { clear: both; }
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix { *zoom: 1; }
+
 /* CUSTOM STYLES */
 .container-wrapper {
 	padding: 50px 0;
@@ -148,15 +160,20 @@ header h4 {
 	-webkit-box-shadow: 0px 6px 0px #c0392b;
 	   -moz-box-shadow: 0px 6px 0px #c0392b;
 			box-shadow: 0px 6px 0px #c0392b;
-	padding: 30px;
+	padding: 30px 15px;
 }
 
 /* about-content */
+.photo {
+	margin: 0 0 10px 0;
+	text-align: center;
+}
+
 .photo img {
 	-webkit-border-radius: 50%;
 	   -moz-border-radius: 50%;
 			border-radius: 50%;
-	max-width: 200px;
+	max-width: 150px;
 	width: 100%;
 }
 
@@ -170,8 +187,13 @@ header h4 {
 
 .skills,
 .exp,
-.edu {
+.edu,
+.info {
 	margin: 0 0 30px 0;
+}
+
+.skills-list {
+	margin: 0 0 15px 0;
 }
 
 .skills-list li {
@@ -181,9 +203,27 @@ header h4 {
 	width: 100%;
 }
 
+.skills-desc li:before {
+	content: '\f046 ';
+	font-family: FontAwesome;
+	left: 0;
+	position: absolute;
+}
+
+.skills-desc li {
+	margin: 0 0 5px 0;
+	padding: 0 0 0 20px;
+	position: relative;
+}
+
 .exp-item,
 .edu-item {
 	margin: 0 0 30px 0;
+}
+
+.exp-item:last-child,
+.edu-item:last-child {
+	margin: 0
 }
 
 .exp-title,
@@ -194,7 +234,7 @@ header h4 {
 
 .exp-date,
 .edu-date {
-	color: #a2a2a2;
+	color: #999;
 	font-size: 12px;
 	margin: 0 0 10px 0;
 }
@@ -203,26 +243,28 @@ header h4 {
 	font-size: 13px;
 }
 
+.personal-info tr td {
+	padding: 0 10px 0 0;
+}
+
 /* portfolio-content */
 .portfolio-content h2 {
 	margin: 0 0 15px 0;
-}
-
-.site-list {
-	margin: 0 -10px;
 }
 
 .site-list li:before {
 	content: '\f0c1';
 	color: #428bca;
 	font-family: FontAwesome;
-	padding: 0 10px 0 0;
+	left: 0;
+	position: absolute;
 }
 
 .site-list li {
 	display: inline-block;
 	margin: 0 0 5px 0;
-	padding: 0 10px;
+	padding: 0 20px;
+	position: relative;
 	vertical-align: top;
 	width: 100%;
 }
@@ -258,6 +300,10 @@ footer {
 	text-align: center;
 }
 
+footer span {
+	display: none;
+}
+
 /*------------------------------------------------------------------
 	[ Mobile 480px ]
 -------------------------------------------------------------------*/
@@ -270,8 +316,17 @@ footer {
 		display: inline;
 	}
 
+	.photo {
+		float: left;
+		margin: 0 15px 5px 0;
+	}
+
 	.skills-list li {
 		width: 50%;
+	}
+
+	footer span {
+		display: inline;
 	}
 
 }
