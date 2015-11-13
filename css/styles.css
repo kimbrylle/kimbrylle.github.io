@@ -269,6 +269,85 @@ header h4 {
 	width: 100%;
 }
 
+.site-item {
+	margin: 0 0 15px 0;
+}
+
+.site-logo {
+	border: 3px solid #f1f1f1;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	margin: 0 auto;
+	max-width: 270px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.logo-overlay {
+	background: rgba(137,0,0,0.5);
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+}
+
+.site-logo:hover .logo-overlay {
+	opacity: 1;
+}
+
+.site-info {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+}
+
+.site-name {
+	color: #fff;
+	font-size: 16px;
+	margin: 0 0 10px 0;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.site-info a {
+	background: #000b97;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	-webkit-box-shadow: 0px 2px 2px #000;
+	   -moz-box-shadow: 0px 2px 2px #000;
+			box-shadow: 0px 2px 2px #000;
+	color: #fff;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	text-shadow: 2px 2px 2px #000;
+	width: 80px;
+}
+
+.site-info a:hover {
+	background: #2633d4;
+}
+
+.site-logo img {
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+	max-width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
 /* contact-content */
 .contact-content {
 	text-align: center;
