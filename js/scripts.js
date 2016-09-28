@@ -21,12 +21,6 @@
 
 	'use strict';
 
-	//$('.tab-content>div').animate({height:"toggle"});
-
-	$('.tab a').click(function() {
-		$('.tab-content>div').animate();
-	});
-
 	$('#profile-tabs').tabs({
 		'active': '#about'
 	});
