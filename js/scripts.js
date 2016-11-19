@@ -7,6 +7,29 @@
 		'active': '#about'
 	});
 
+	$('.accord-content').hide();
+	$('.accord-title').first().toggleClass("on").toggleClass("off");
+	$('.accord-content').first().slideDown().toggleClass('active');
+	$('.accord-title').toggleClass("off");
+	$('.accord-title').click(function() {
+		if ($(this).is('.off')) {
+			$('.on').toggleClass("off").toggleClass("on").next().slideToggle().toggleClass("active");
+			$(this).toggleClass("off").toggleClass("on");
+			$(this).next().slideToggle().toggleClass("active");
+		} else {
+			$(this).toggleClass("on").toggleClass("off");
+			$(this).next().slideToggle().toggleClass("active");
+		}
+		return false;
+	});
+	$('.accord-title').hover(function() {
+		if ($(this).hasClass("on")) {
+			$(this).attr('title', 'Click to hide content');
+		} else {
+			$(this).attr('title', 'Click to show content');
+		}
+	})
+
 	$('#contact .row').contents().filter(function() {
 		return this.nodeType === 3;
 	}).remove();
@@ -47,4 +70,4 @@
 	}
 	/* END - IE Hack Fix */
 
-})(window, document, jQuery);
+})(window, document, $);
