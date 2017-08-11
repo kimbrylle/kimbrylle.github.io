@@ -368,6 +368,7 @@ footer span {
 	position: relative;
 	text-align: center;
 }
+.button-wrapper a:before,
 .button-wrapper a:after {
 	background: #00bfff;
 	height: 100%;
@@ -378,6 +379,13 @@ footer span {
 	-moz-transition: all ease 0.3s;
 	transition: all ease 0.3s;
 	width: 100%;
+}
+
+.button-wrapper a:hover:before {
+	color: #fff;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	transform: translateX(0);
 }
 .button-wrapper a:hover:after {
 	color: #fff;
@@ -432,6 +440,54 @@ footer span {
 	-webkit-transform: translate(100%,100%);
 	-moz-transform: translate(100%,100%);
 	transform: translate(100%,100%);
+}
+.collapse1:before {
+	content: 'Collapse1';
+	-webkit-transform: translate(-100%,-100%);
+	-moz-transform: translate(-100%,-100%);
+	transform: translate(-100%,-100%);
+}
+.collapse1:after {
+	content: 'Collapse1';
+	-webkit-transform: translate(100%,100%);
+	-moz-transform: translate(100%,100%);
+	transform: translate(100%,100%);
+}
+.collapse2:before {
+	content: 'Collapse2';
+	-webkit-transform: translate(-100%,100%);
+	-moz-transform: translate(-100%,100%);
+	transform: translate(-100%,100%);
+}
+.collapse2:after {
+	content: 'Collapse2';
+	-webkit-transform: translate(100%,-100%);
+	-moz-transform: translate(100%,-100%);
+	transform: translate(100%,-100%);
+}
+.collapse3:before {
+	content: 'Collapse3';
+	-webkit-transform: translate(-100%,0);
+	-moz-transform: translate(-100%,0);
+	transform: translate(-100%,0);
+}
+.collapse3:after {
+	content: 'Collapse3';
+	-webkit-transform: translate(100%,0);
+	-moz-transform: translate(100%,0);
+	transform: translate(100%,0);
+}
+.collapse4:before {
+	content: 'Collapse4';
+	-webkit-transform: translate(0,-100%);
+	-moz-transform: translate(0,-100%);
+	transform: translate(0,-100%);
+}
+.collapse4:after {
+	content: 'Collapse4';
+	-webkit-transform: translate(0,100%);
+	-moz-transform: translate(0,100%);
+	transform: translate(0,100%);
 }
 @media only screen and (min-width:480px) {
 	.tab a {
