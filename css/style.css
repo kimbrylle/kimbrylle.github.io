@@ -12,7 +12,7 @@ i {font-style: normal;}
 
 
 /* begin */
-body { font-family:'微软雅黑','Microsoft Yahei','Arail'; font-size: 12px; color: #666; background-color: #f3f3f3; }
+body { font-family:'微软雅黑','Microsoft Yahei','Arial'; font-size: 14px; color: #666; background-color: #f3f3f3; }
 a,a:hover,a:active { -webkit-tap-highlight-color:rgba(0,0,0,0); text-decoration: none; }
 html, body { *overflow-x:hidden; -webkit-overflow-scrolling:touch; }
 body.of { overflow: hidden; }
@@ -118,7 +118,7 @@ i { font-size: 16px; }
 .info_content p { line-height: 22px; margin-bottom: 20px; overflow: hidden; }
 .info_content p em { margin: 0 5px; }
 .info_content ul li { list-style: none; overflow: hidden; position: relative; }
-.info_content ul li h3 { font-size: 12px; color: #333; line-height: 25px; }
+.info_content ul li h3 { font-size: 14px; color: #333; line-height: 25px; }
 .info_content ul li:hover h3 { color: #109d59; }
 .info_content ul li h3 i { float: left; margin-right: 10px;  }
 .info_content ul li:hover h3 i { color: #109d59; }
@@ -226,3 +226,24 @@ i { font-size: 16px; }
 .carousel-control i { font-size: 16px; }
 .carousel-control:hover,.tip_area_close:hover { background-color: rgba(0,0,0,0.6); }
 .carousel-control:active,.tip_area_close:active { background-color: rgba(0,0,0,0.7); }
+
+/* overrides */
+.avatar .avatar_pic {
+	background: url(../images/kim_.jpg) no-repeat center center;
+	background-size: 100%;
+}
+.tip_avatar .tip_avatar_con {
+	background: url(../images/kim_.jpg) no-repeat 20% center;
+	background-size: 40%;
+}
+.info_content ul.titan-proj {
+	padding: 0 0 0 35px;
+}
+.info_content ul.titan-proj li {
+	list-style-type: disc;
+	padding: 5px 0;
+}
+.info_content ul.titan-proj li a {
+	color: #666;
+	text-decoration: underline;
+}
